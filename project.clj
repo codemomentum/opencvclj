@@ -4,8 +4,9 @@
             :license {:name "Eclipse Public License"
                       :url  "http://www.eclipse.org/legal/epl-v10.html"}
             :dependencies [[org.clojure/clojure "1.6.0"]
-                           [org.bytedeco.javacpp-presets/opencv "2.4.11-0.11"]]
-            :resource-paths ["lib/opencv-2411.jar"]
+                           ;[org.bytedeco.javacpp-presets/opencv "2.4.11-0.11"]
+                           ]
+            :resource-paths ["lib/opencv-2411.jar","resources/"]
             :jvm-opts [~(str "-Djava.library.path=native/:" (System/getProperty "java.library.path"))]
             )
 
